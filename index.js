@@ -11,7 +11,7 @@ import cors from "cors";
 dotenv.config();
 
 const app = express();
-const port = process.env.port;
+const port = process.env.port||5000;
 const DATABASE_URL = process.env.DATABASE_URL;
 
 connectdb(DATABASE_URL);
